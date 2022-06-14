@@ -1,23 +1,23 @@
-import React, { useEffect} from "react"
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchGreetingApi } from '../redux/greetings/greetings';
 
-const Greeting =() => {
+const Greeting = () => {
   const greeting = useSelector((state) => state.greetingsReducer);
   const dispatch = useDispatch();
   useEffect(() => {
-      dispatch(fetchGreetingApi());
+    dispatch(fetchGreetingApi());
   }, [dispatch]);
 
-  const refreshPage = () =>{
+  const refreshPage = () => {
     window.location.reload(false);
-  }
-    return (
-        <div className="mt-20 flex flex-col items-center">
-          <p className=" font-bold"> Greeting: { greeting }</p>
+  };
+  return (
+      <div className="mt-20 flex flex-col items-center">
+        <p className=" font-bold"> { greeting } </p>
           <button onClick={refreshPage} className="bg-emerald-700 p-2 mt-4 rounded text-slate-50">Click me to see next greeting</button>
       </div>
-    );
+  );
 };
 
-export default Greeting
+export default Greeting;
