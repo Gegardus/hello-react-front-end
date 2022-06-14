@@ -13,10 +13,11 @@ const Greeting = () => {
     window.location.reload(false);
   };
   return (
-      <div className="mt-20 flex flex-col items-center">
-        <p className=" font-bold"> { greeting } </p>
-          <button onClick={refreshPage} className="bg-emerald-700 p-2 mt-4 rounded text-slate-50">Click me to see next greeting</button>
-      </div>
+    <div className="mt-20 flex flex-col items-center">
+        <p className="font-bold"> Greeing: 
+        { greeting } </p>
+        <button type="button" onClick={refreshPage} className="bg-emerald-700 p-2 mt-4 rounded text-slate-50">Click me to see next greeting</button>
+    </div>
   );
 };
 
