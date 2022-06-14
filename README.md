@@ -2,7 +2,7 @@
 
 # Hello React Front End app
 
-> Hello React Front End app is simple application that contains setup of react application. The greeting page loads a random greeting from API on every page load.
+> Hello React Front End app is simple React application. The greeting page renders a random greeting from API on every page load.
 
 ## Link to the back end
 
